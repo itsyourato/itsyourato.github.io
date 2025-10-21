@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../schedule/schedule.css">
+    <link rel="stylesheet" href="/base.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <img src="../image/calender.png" width="90%" alt="캘린더 이미지" style="display: block; margin: 20px auto; border-radius: 44px;">
+
+    <div id="footer"></div>
+
+    <script>
+        fetch('../navbar/navbar.html')
+        .then(response => response.text())
+        .then(data => 
+            document.getElementById('navbar').innerHTML = data);
+        
+        fetch('../footer/footer.html')
+            .then(response => response.text())
+            .then(data => 
+            document.getElementById('footer').innerHTML = data);
+    </script>
+    <script src="./schedule.js"></script>
+
+</body>
+</html>
