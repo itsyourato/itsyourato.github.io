@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../account/account.css">
+    <link rel="stylesheet" href="/base.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+      <main class="main">
+        <div class="poster-card">
+          <img src="../image/account1.jpeg" alt="공연 1">
+            <div class="poster-info">
+              <a href="https://www.instagram.com/nugsmag/" target="_blank">
+                  <h3>넋 매거진</h3>
+              </a> 
+              <p>@nugsmag </p>
+              <p>한국 인디 씬을 조명하는 매거진.</p>
+            </div>
+        </div>
+        <div class="poster-card">
+          <img src="../image/account2.jpeg" alt="공연 2">
+            <div class="poster-info">
+              <a href="https://www.instagram.com/jazz_editor/" target="_blank">
+              <h3>재즈기자</h3></a>
+              <p>@jazz_editor </p>
+              <p>다양한 재즈공연과 문화를 소개하는 매거진.</p>
+            </div>
+        </div>
+        <div class="poster-card">
+          <img src="../image/account3.jpeg" alt="공연 3">
+            <div class="poster-info">
+              <a href="https://www.instagram.com/virtueclique/" target="_blank">
+              <h3>사교적 유교 클럽</h3></a>
+              <p>@vityueclique </p>
+              <p>다양한 음악 장르와 아티스트 소개하는 매거진.</p>
+            </div>
+        </div>
+        <div class="poster-card">
+          <img src="../image/account4.jpeg" alt="공연 4">
+            <div class="poster-info">
+              <a href="https://www.instagram.com/pavedawave/" target="_blank">
+              <h3>PAVE DA WAVE</h3></a>
+              <p>@pavedawave</p>
+              <p>힙합 아티스트와 음악을 소개하는 매거진.</p>
+            </div>
+        </div>
+        <div class="poster-card">
+          <img src="../image/account5.jpeg" alt="공연 4">
+            <div class="poster-info">
+              <a href="https://www.instagram.com/kpopburger_magazine/" target="_blank">
+              <h3>케이팝 버거 매거진</h3></a>
+              <p>@kpopburger_magazine </p>
+              <p>아티스트와의 인터뷰를 중심으로 소개하는 매거진.</p>
+            </div>
+        </div>
+      </main>
+
+    <div id="footer"></div>
+    <script>
+      fetch('../navbar/navbar.html')
+        .then(response => response.text())
+        .then(data => 
+          document.getElementById('navbar').innerHTML = data);
+        
+      fetch('../footer/footer.html')
+          .then(response => response.text())
+          .then(data => 
+            document.getElementById('footer').innerHTML = data);
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 120px 60px 60px 60px; 
+  background-color: transparent; 
+}
+
+
+.poster-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: #373737;
+  border: 1px solid #333;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  width: 600px;
+  transition: all 0.3s ease;
+}
+
+.poster-card:hover {
+  transform: translateY(-6px);
+  border-color: #666;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+.poster-card img {
+  width: 180px;
+  height: 180px;
+  border-radius: 100px;
+  margin: 18px;
+  object-fit: cover;
+}
+
+.poster-info {
+  flex: 1;
+  padding: 0 18px;
+  color: #eee;
+}
+
+.poster-info h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.poster-info p {
+  font-size: 18px;
+  color: #aaa;
+  margin: 4px 0;
+}

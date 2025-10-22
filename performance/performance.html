@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../performance/performance.css">
+    <link rel="stylesheet" href="/base.css">
+</head>
+<body>
+  <div id="navbar"></div>
+    <main>
+    <section>
+      <h2>힙합</h2>
+      <div class="carousel">
+        <div class="poster-container">
+          <div class="poster-card">
+            <img src="../image/per1.png" alt="공연 1">
+            <p>Way Up Vol. 7</p>
+          </div>
+          <div class="poster-card">
+            <img src="../image/per2.png" alt="공연 2">
+            <p>OFFLINE ONLY VOL.10</p>
+          </div>
+          <div class="poster-card">
+            <img src="../image/per3.png" alt="공연 3">
+            <p>OFFLINE ONLY VOL.9</p>
+          </div>
+          <div class="poster-card">
+            <img src="../image/per4.png" alt="공연 4">
+            <p>OFFFLINE ONLY 대전</p>
+          </div>
+          <div class="poster-card">
+            <img src="../image/per5.jpeg" alt="공연 5">
+            <p>착 한 놈 둘</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>재즈</h2>
+      <div class="carousel">
+        <div class="poster-container">
+          <div class="poster-card">
+            <img src="../image/jazz1.jpeg" alt="공연 1">
+            <p>RUSTIC JAZZ</p>
+          </div>
+          <div class="poster-card">
+            <img src="../image/jazz2.jpeg" alt="공연 2">
+            <p>RUSTIC JAZZ</p>
+          </div>
+          <div class="poster-card">
+            <img src="../image/jazz3.jpeg" alt="공연 3">
+            <p>QUARTET 9</p>
+          </div>
+          <div class="poster-card">
+            <img src="../image/jazz4.jpeg" alt="공연 4">
+            <p>QUARTET 9</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>밴드</h2>
+      <div class="carousel">
+        <div class="poster-container">
+          <div class="poster-card">
+            <img src="../image/band1.jpeg" alt="공연 1">
+            <p>GOLDEN DAYS</p>
+          </div>
+          <div class="poster-card">
+            <img src="../image/band2.jpeg" alt="공연 2">
+            <p>FRIEND SHOP</p>
+          </div>
+          <div class="poster-card">
+            <img src="../image/band3.jpeg" alt="공연 3">
+            <p>CHARTED</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+
+  <div id="footer"></div>
+  <script>
+    fetch('../navbar/navbar.html')
+      .then(response => response.text())
+      .then(data => 
+        document.getElementById('navbar').innerHTML = data);
+      
+    fetch('../footer/footer.html')
+        .then(response => response.text())
+        .then(data => 
+          document.getElementById('footer').innerHTML = data);
+  </script>
+
+  <style>
+    
+
+  </style>
+</body>
+</html>
